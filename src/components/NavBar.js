@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Nav = styled.nav`
@@ -9,14 +9,14 @@ const Nav = styled.nav`
 `;
 
 const Pages = styled(Link)`
-    background-color: #1f1f20;
-    color: white;
-    margin: 10px;
-    padding: 5px 10px 5px 10px;
-    display: flex;
-    justify-content: center;
+   background-color: #1f1f20;
+   color: white;
+   margin: 10px;
+   padding: 5px 10px 5px 10px;
+   display: flex;
+   justify-content: center;
 
-`;
+//`;
 
 export const NavBar = () => {
   return (
