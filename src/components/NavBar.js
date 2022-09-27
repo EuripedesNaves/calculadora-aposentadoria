@@ -16,14 +16,14 @@ const Pages = styled(Link)`
    display: flex;
    justify-content: center;
 
-//`;
+`;
 
 export const NavBar = () => {
   return (
     <Nav>
       <h1>NavBar</h1>
       <Pages to='/'> Home</Pages>
-      <Pages to='/About'> About</Pages>
+      <Pages to='/about'> About</Pages>
     </Nav>
   )
 }
