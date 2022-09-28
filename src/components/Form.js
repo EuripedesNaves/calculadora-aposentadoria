@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Forms from './Forms.css'
 
 export const Form = () => {
     const [QuantosAnos, setQuantosAnos] = useState('');
@@ -13,8 +14,8 @@ export const Form = () => {
     const handleMontaDespesasInput = e => setMontaDespesas(e.target.value);
 
     return (
-        <div className="Form">
-        <h3> Formulário de Perguntas</h3>
+        <div className="form-box">
+        <h3 className="titulo"> Formulário de Perguntas</h3>
         <form>
             <label>Em quantos anos você deseja se aposentar?</label>
             <input 
@@ -45,7 +46,7 @@ export const Form = () => {
                 onChange={handleMontaDespesasInput}
             />
         </form>
-        <button type="submit">Realizar Cálculo</button>
+        <button className="button" type="submit">Realizar Cálculo</button>
         </div>
     )
   }

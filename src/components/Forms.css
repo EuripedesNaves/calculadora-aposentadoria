@@ -1,0 +1,53 @@
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+
+.titulo {
+    font-size: 30px;
+    text-align: center;
+}
+
+.form-box{
+    min-width: 50%;
+    height: 10vh;
+    border: 1px solid;
+    margin-bottom: 10px;
+    position:relative;
+    background-color: #567ebb;
+}
+
+.form-box form{
+    background-color: #dce0e6;
+    padding: 20px;
+}
+
+.form-box label {
+    margin: 10px;
+}
+
+.form-box input, textarea{
+    display: block;
+    width: 94.5vw;
+    padding: .8rem .8rem .5rem .8rem;
+    margin: .9vw 0.9vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.form-box textarea{
+    height: 15vh;
+}
+
+.button {
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
