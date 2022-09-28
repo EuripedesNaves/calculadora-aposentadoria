@@ -11,17 +11,17 @@ const Nav = styled.nav`
 const Pages = styled(Link)`
    background-color: #1f1f20;
    color: white;
-   margin: 10px;
-   padding: 5px 10px 5px 10px;
+   margin: 20px 5px 20px 20px;
+   padding: 5px 20px 5px 20px;
    display: flex;
    justify-content: center;
-
+   text-decoration: none;
+   border-radius: 10px;
 `;
 
 export const NavBar = () => {
   return (
     <Nav>
-      <h1>NavBar</h1>
       <Pages to='/'> Home</Pages>
       <Pages to='/about'> About</Pages>
     </Nav>

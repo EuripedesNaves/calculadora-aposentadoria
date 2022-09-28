@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
+
+const Title = styled.h1`
+    background-color: #2b4c7e;
+    color: white;
+    padding: 20px;
+`;
 
 export const Home = () => {
     return (
       <div>
-        <h1>Home</h1>
+        <Title>Simulador Aposentadoria</Title>
       </div>
     )
   }
