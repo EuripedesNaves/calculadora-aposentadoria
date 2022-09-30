@@ -46,7 +46,9 @@ export const Form = () => {
                 onChange={handleMontaDespesasInput}
             />
         </form>
+        <div className="footer">
         <button className="button" type="submit">Realizar Cálculo</button>
+        </div>
         </div>
     )
   }
