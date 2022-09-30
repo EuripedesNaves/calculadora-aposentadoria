@@ -1,13 +1,14 @@
-{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid red;
 }
 
 .titulo {
     font-size: 30px;
     text-align: center;
+    margin: 0px;
+    padding: 30px;
 }
 
 .form-box{
@@ -17,6 +18,7 @@
     margin-bottom: 10px;
     position:relative;
     background-color: #567ebb;
+    font-size: 17px;
 }
 
 .form-box form{
@@ -46,8 +48,13 @@
 .button {
     border-radius: 10px;
     padding: 15px;
-    margin: 20px;
+    margin: 65px;
     background-color: black;
     color: white;
     font-size: 20px;
+}
+
+.footer {
+    background-color: #dce0e6;
+    height: 265px
 }
