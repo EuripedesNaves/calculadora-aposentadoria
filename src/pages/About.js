@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Abouts from './Abouts.css';
-import { Titulo } from './Titulo';
+import Abouts from '../styles/Abouts.css';
+import { Titulo } from '../components/Titulo';
 
 const Texto = styled.div`
     background-color: #567ebb;

@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Results = () => {
+export const Result = () => {
     return (
       <div>
-        <h1>Results</h1>
+        <h1>Result</h1>
       </div>
     )
   }
