@@ -1,6 +1,6 @@
 import React from 'react';
-import { Form } from './Form';
-import { Titulo } from './Titulo';
+import { Form } from '../components/Form';
+import { Titulo } from '../components/Titulo';
 
 export const Home = () => {
     return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Forms from './Forms.css'
+import Forms from '../styles/Forms.css'
 
 export const Form = () => {
     const [QuantosAnos, setQuantosAnos] = useState('');
