@@ -20,7 +20,8 @@ const taxaAposentadoria = 5.5;
 // Resultados preliminares
 const superavitEsperado = rendaMensal - montaDespesa;
 
-
+//Patrimônio que será necessário acumular
+const patrimonioEsperado = RendaEsperada / iq(taxaAposentadoria);
 
 
 // Taxa Equivalente
@@ -40,4 +41,4 @@ function expectedIRR() {
     return (expectedIRR)
 }
 
-console.log(expectedIRR());
+console.log(patrimonioEsperado);
