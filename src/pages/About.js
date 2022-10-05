@@ -5,19 +5,37 @@ import { Titulo } from '../components/Titulo';
 
 const Texto = styled.div`
     background-color: #567ebb;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 `;
 
 const Name = styled.h2`
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-left: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-top: 0px;
+  margin: 0px 0px 0px 30px;
+  padding: 30px 0px 30px 0px;
   background-color: #567ebb;
   font-size: 40px;
+  @media(max-width:425px) {
+  font-size: 15px;
+  margin: 0px;
+  padding: 0xp;
+  }
+  @media(min-width:426px) and (max-width:768px) {
+  font-size: 20px;
+  margin: 0px;
+  padding: 15px 0px 0px 0px;
+  }
+  @media(min-width:769px) and (max-width:1024px) {
+  font-size: 25px;
+  margin: 0px;
+  padding: 20px 0px 20px 0px
+  }
+  @media(min-width: 1025px) and (max-width:1440px) {
+  font-size: 30px;
+  margin: 0px;
+  padding: 20px 0px 20px 0px;
+  }
 `;
 
 const Metodologia = styled.p`
@@ -28,6 +46,29 @@ const Metodologia = styled.p`
   line-height: 40px;
   margin-top: 10px;
   color: white;
+  @media(max-width:425px) {
+  font-size: 10px;
+  margin: 0px 10px 0px 10px;
+  line-height: 20px;
+  }
+  @media(min-width:426px) and (max-width:768px) {
+  font-size: 15px;
+  margin: 15px;
+  line-height: 20px;
+  justify-content: left;
+  }
+  @media(min-width:769px) and (max-width:1024px) {
+  font-size: 17px;
+  margin: 10px;
+  line-height: 30px;
+  justify-content: left;
+  }
+  @media(min-width: 1025px) and (max-width: 1440px) {
+  font-size: 19px;
+  margin: 10px;
+  line-height: 35px;
+  justify-content: left;
+  }
 `;
 
 export const About = () => {
