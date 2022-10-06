@@ -38,7 +38,7 @@ export const Form = () => {
                 value={RendaMensal}
                 onChange={handleRendaMensalInput}
             />
-            <label>Qual é a monta de suas despesas</label>
+            <label>Qual é a monta de suas despesas?</label>
             <input 
                 type="number"
                 name="MontaDespesas"
