@@ -32,13 +32,33 @@ function iq(taxa) {
 }
 
 // TIR Esperada
-
 function expectedIRR() {
     let rendimentoRendaFixa = iq(taxaRendaFixa) * (rendaFixa * superavitEsperado);
     let rendimentoRendaVariavel = iq(taxaRendaVariavel) * (rendaVariavel * superavitEsperado);
     let expectedIRR = (((((rendimentoRendaFixa + rendimentoRendaVariavel) / superavitEsperado) + 1) ** 12) - 1);
-    
+
     return (expectedIRR)
 }
 
+// Coeficiente de Financiamento
+function parcelaAposentadoria() {
+
+   //let CF = expectedIRR() / (1 - (1 / ((1 + expectedIRR()) ** anosAposentadoria)));
+   let parcelaAposentadoria =  patrimonioEsperado * expectedIRR() / (((1 + expectedIRR())**anosAposentadoria)-1);
+     
+    return (parcelaAposentadoria)
+}
+
+// Parcelas hoje (NPER)
+function perHoje() {
+
+    let prazoParcela = Math.log((patrimonioEsperado / (superavitEsperado * 12)) * (expectedIRR()) + 1) / Math.log(1 + (expectedIRR()));
+
+    return (prazoParcela)
+}
+
+
+console.log(parcelaAposentadoria());
 console.log(patrimonioEsperado);
+console.log(perHoje());
+console.log(iq(taxaAposentadoria));
