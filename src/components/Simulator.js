@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Simulador({ rendaMensal, montaDespesa, anosAposentadoria, RendaEsperada }) {
+const Simulator = ({ rendaMensal, montaDespesa, anosAposentadoria, RendaEsperada }) => {
 
     // Variáveis Formulário
     // const rendaMensal = 8000;
@@ -62,6 +62,7 @@ export default function Simulador({ rendaMensal, montaDespesa, anosAposentadoria
 
     return (
         <>
+        <h1>SIMULADOR</h1>
             <p>{patrimonioEsperado}</p>
             <p>{parcelaAposentadoria()}</p>
             <p>{perHoje()}</p>
@@ -70,4 +71,4 @@ export default function Simulador({ rendaMensal, montaDespesa, anosAposentadoria
     )
 }
 
-
+export default Simulator

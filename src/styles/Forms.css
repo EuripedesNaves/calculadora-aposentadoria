@@ -17,7 +17,7 @@
     height: 10vh;
     border: 1px solid;
     margin-bottom: 10px;
-    position:relative;
+    /* position:relative; */
     background-color: #567ebb;
     font-size: 12px;
 }
@@ -74,7 +74,7 @@
         height: 10vh;
         border: 1px solid;
         margin-bottom: 10px;
-        position:relative;
+        /* position:relative; */
         background-color: #567ebb;
         font-size: 15px;
     }
@@ -131,7 +131,7 @@
             height: 10vh;
             border: 1px solid;
             margin-bottom: 5px;
-            position:relative;
+            /* position:relative; */
             background-color: #567ebb;
             font-size: 12px;
         }
@@ -188,7 +188,7 @@
                 height: 10vh;
                 border: 1px solid;
                 margin-bottom: 5px;
-                position:relative;
+                /* position:relative; */
                 background-color: #567ebb;
                 font-size: 25px;
             }
