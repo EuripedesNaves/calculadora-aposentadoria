@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Abouts from '../styles/Abouts.css';
+import '../styles/Abouts.css';
 import { Titulo } from '../components/Titulo';
 
 const Texto = styled.div`

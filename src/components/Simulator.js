@@ -1,5 +1,5 @@
 import React from 'react';
-import Simulators from '../styles/Simulators.css'
+import '../styles/Simulators.css'
 
 const Simulator = ({ rendaMensal, montaDespesa, anosAposentadoria, RendaEsperada }) => {
 
