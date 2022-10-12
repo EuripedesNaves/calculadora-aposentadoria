@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { scryRenderedDOMComponentsWithClass } from 'react-dom/test-utils';
-import { useNavigate } from 'react-router-dom';
-import Forms from '../styles/Forms.css'
+import '../styles/Forms.css'
 import Simulator from './Simulator';
 
 export const Form = () => {
