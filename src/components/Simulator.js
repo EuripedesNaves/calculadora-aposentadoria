@@ -1,4 +1,5 @@
 import React from 'react';
+import Simulators from '../styles/Simulators.css'
 
 const Simulator = ({ rendaMensal, montaDespesa, anosAposentadoria, RendaEsperada }) => {
 
@@ -62,10 +63,10 @@ const Simulator = ({ rendaMensal, montaDespesa, anosAposentadoria, RendaEsperada
 
     return (
         <>
-        <h1>SIMULADOR</h1>
-            <p>{patrimonioEsperado}</p>
-            <p>{parcelaAposentadoria()}</p>
-            <p>{perHoje()}</p>
+        <h1>Resultados</h1>
+            <p>Patrimônio esperado: {Math.round(patrimonioEsperado).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
+            <p>Parcela anual esperada: {Math.round(parcelaAposentadoria()).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
+            <p>Tempo aposentadoria: {Math.round(perHoje())} anos</p>
         </>
 
     )

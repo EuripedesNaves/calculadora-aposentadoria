@@ -55,7 +55,7 @@ export const Form = () => {
                     <button className="button" onClick={() => setCalculated(true)}>Realizar Cálculo</button>
                 </div>
             </div>
-            <div>
+            <div className="simulator">
                 {calculated && <Simulator
                     rendaMensal={RendaMensal}
                     montaDespesa={MontaDespesas}
