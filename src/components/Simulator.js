@@ -1,13 +1,8 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import '../styles/Simulators.css'
+import axios from 'axios';
 
 const Simulator = ({ rendaMensal, montaDespesa, anosAposentadoria, RendaEsperada }) => {
-
-    // Variáveis Formulário
-    // const rendaMensal = 8000;
-    // const montaDespesa = 4000;
-    // const anosAposentadoria = 30;
-    // const RendaEsperada = 18000;
 
     // Proporção perfil de investimento
     const rendaFixa = 0;
@@ -16,7 +11,15 @@ const Simulator = ({ rendaMensal, montaDespesa, anosAposentadoria, RendaEsperada
 
     // Dados de mercado - API futura
     const taxaRendaFixa = 2.3;
-    const taxaRendaVariavel = 6.3;
+    const [taxaRendaVariavel, setTaxaRendaVariavel] = useState([]);
+    const api = async () => { 
+        const {data} = await axios.get("https://api.bcb.gov.br/dados/serie/bcdata.sgs.4189/dados/ultimos/10?formato=json")
+        
+        const lastElement = data[data.length-1].valor
+
+        setTaxaRendaVariavel(lastElement)
+    }
+    useEffect(()=>{api()}, []);
 
     //Dados após aposentadoria
     const taxaAposentadoria = 5.5;
@@ -47,7 +50,6 @@ const Simulator = ({ rendaMensal, montaDespesa, anosAposentadoria, RendaEsperada
     // Coeficiente de Financiamento
     function parcelaAposentadoria() {
 
-        //let CF = expectedIRR() / (1 - (1 / ((1 + expectedIRR()) ** anosAposentadoria)));
         let parcelaAposentadoria = patrimonioEsperado * expectedIRR() / (((1 + expectedIRR()) ** anosAposentadoria) - 1);
 
         return (parcelaAposentadoria)
