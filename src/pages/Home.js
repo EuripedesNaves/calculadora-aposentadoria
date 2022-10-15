@@ -80,7 +80,7 @@ return(
       <Texto>
         <Name>Metodologia</Name>
         <br />
-        <Contexto>Oi</Contexto>
+        <Contexto>Oi, ajustado</Contexto>
       </Texto>
 </>
 
