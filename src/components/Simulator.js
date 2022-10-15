@@ -16,11 +16,11 @@ const Simulator = ({ rendaMensal, montaDespesa, anosAposentadoria, RendaEsperada
         const {data} = await axios.get("https://api.bcb.gov.br/dados/serie/bcdata.sgs.4189/dados/ultimos/10?formato=json")
         
         const lastElement = data[data.length-1].valor
-        
+
         setTaxaRendaVariavel(lastElement)
     }
     useEffect(()=>{api()}, []);
-    
+
     //Dados após aposentadoria
     const taxaAposentadoria = 5.5;
     
