@@ -39,7 +39,7 @@ const Name = styled.h2`
   }
 `;
 
-const Metodologia = styled.p`
+const Contexto = styled.p`
   display: flex;
   text-align: left;
   justify-content: center;
@@ -76,7 +76,12 @@ export const Home = () => {
 return(
 
 <>
-<Titulo></Titulo>
+<Titulo>O que esperar?</Titulo>
+      <Texto>
+        <Name>Metodologia</Name>
+        <br />
+        <Contexto>Oi, ajustado</Contexto>
+      </Texto>
 </>
 
 )
