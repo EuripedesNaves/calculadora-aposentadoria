@@ -59,7 +59,7 @@ export const Home = () => {
         <>
             <Titulo />
             <Texto>
-                <img src={Dolar} width="90%" height="90%" />
+                <img src={Dolar} alt="Nota de Dólar" width="90%" height="90%" />
                 <Name>Seja bem vindo ao simulador de aposentadoria, esperamos te ajudar alcançar sua independência financeira</Name>
             </Texto>
                 <Pages to='/result'> Simular</Pages>
