@@ -23,7 +23,7 @@ const Simulator = ({ rendaMensal, montaDespesa, anosAposentadoria, RendaEsperada
 
     //Dados após aposentadoria
     const taxaAposentadoria = 5.5;
-
+    
     // Resultados preliminares
     const superavitEsperado = rendaMensal - montaDespesa;
 
@@ -66,9 +66,9 @@ const Simulator = ({ rendaMensal, montaDespesa, anosAposentadoria, RendaEsperada
     return (
         <>
         <h1>Resultados</h1>
+            <p>Tempo para aposentadoria: {Math.round(perHoje())} anos</p>
             <p>Patrimônio esperado: {Math.round(patrimonioEsperado).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
-            <p>Parcela anual esperada: {Math.round(parcelaAposentadoria()).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
-            <p>Tempo aposentadoria: {Math.round(perHoje())} anos</p>
+            <p>Aporte anual esperado: {Math.round(parcelaAposentadoria()).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
         </>
 
     )

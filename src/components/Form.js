@@ -17,9 +17,10 @@ export const Form = () => {
 
     return (
         <>
+            <h3 className="titulo"> Bora calcular?</h3>
             <div className="form-box">
-                <h3 className="titulo"> Formulário de Perguntas</h3>
                 <form>
+                    <h2>Perguntas</h2>
                     <label>Em quantos anos você deseja se aposentar?</label>
                     <input
                         type="number"
@@ -49,19 +50,18 @@ export const Form = () => {
                         onChange={handleMontaDespesasInput}
                     />
                 </form>
-                <div className="footer">
-                    <button className="button" onClick={() => setCalculated(true)}>Realizar Cálculo</button>
-                </div>
-            </div>
-            <div className="simulator">
-                {calculated && <Simulator
-                    rendaMensal={RendaMensal}
-                    montaDespesa={MontaDespesas}
-                    anosAposentadoria={QuantosAnos}
-                    RendaEsperada={RendaEsperada}
-                />}
+                <span className="simulator">
+                    {calculated && <Simulator
+                        rendaMensal={RendaMensal}
+                        montaDespesa={MontaDespesas}
+                        anosAposentadoria={QuantosAnos}
+                        RendaEsperada={RendaEsperada}
+                    />}
 
+                </span>
             </div>
+            <button className="button" onClick={() => setCalculated(true)}>Bora vê</button>
+            <div className="footer"></div>
         </>
 
     )

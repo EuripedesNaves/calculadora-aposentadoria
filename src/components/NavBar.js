@@ -17,23 +17,25 @@ const Pages = styled(Link)`
    justify-content: center;
    text-decoration: none;
    border-radius: 10px;
-   @media(max-width:320px) {
-   margin: 20px 30px 20px 40px;
-   }
+
+    @media(max-width:320px) {
+    margin: 10px 0px 10px 5px;
+    allign-itens: center;
+    }
    @media(min-width: 321px) and (max-width:375px) {
-   margin: 20px 30px 20px 60px;
+    margin: 10px 0px 10px 5px;
    }
    @media(min-width: 376px) and (max-width:425px) {
-   margin: 20px 30px 20px 80px;
+    margin: 10px 0px 10px 5px;
    }
    @media(min-width:426px) and (max-width:768px) {
-    margin: 20px 0px 20px 200px;
+    margin: 10px 0px 10px 5px;
   }
     @media(min-width:769px) and (max-width:1024px) {
-    margin: 20px 0px 30px 300px;
+      margin: 10px 0px 10px 5px;
     }
     @media(min-width: 1025px) and (max-width: 1440px) {
-    margin: 20px 0px 30px 420px;
+      margin: 10px 0px 10px 5px;
     }
 `;
 
@@ -41,6 +43,7 @@ export const NavBar = () => {
   return (
     <Nav>
       <Pages to='/'> Home</Pages>
+      <Pages to='/result'> Result</Pages>
       <Pages to='/about'> About</Pages>
     </Nav>
   )
