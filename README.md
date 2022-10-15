@@ -12,12 +12,11 @@ This project was made for calculating the time and money necessary to retire.
 
 ### Pages of the Site
 
-. Método
-. Home
-. Simulador
+Método / Home / Simulador
 
 ### Screenshots
 
+![home](https://github.com/EuripedesNaves/calculadora-aposentadoria/blob/main/src/images/Tela%20Inicial.png?raw=true)
 
 ### Tecnologies
 
