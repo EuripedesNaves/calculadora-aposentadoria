@@ -15,24 +15,9 @@ color: white;
 padding: 40px;
 background-color:#2b4c7e;
 font-weight: bold;
-@media(max-width:320px) {
-    margin: 10px 0px 10px 5px;
-    allign-itens: center;
-    }
-   @media(min-width: 321px) and (max-width:375px) {
-    margin: 10px 0px 10px 5px;
-   }
-   @media(min-width: 376px) and (max-width:425px) {
-    margin: 10px 0px 10px 5px;
-   }
-   @media(min-width:426px) and (max-width:768px) {
-    margin: 10px 0px 10px 5px;
-  }
-    @media(min-width:769px) and (max-width:1024px) {
-      margin: 10px 0px 10px 5px;
-    }
-    @media(min-width: 1025px) and (max-width: 1440px) {
-      margin: 10px 0px 10px 5px;
+
+@media(max-width:425px) {
+    font-size: 16px;
     }
 `;
 
