@@ -5,10 +5,9 @@ import styled from 'styled-components';
 const Title = styled.h1`
     background-color: #2b4c7e;
     color: white;
-    padding: 30px;
+    padding: 20px;
     font-size: 40px;
     @media(max-width:425px) {
-    padding: 10px;
     font-size: 15px;
     }
     @media(min-width:426px) and (max-width:768px) {
