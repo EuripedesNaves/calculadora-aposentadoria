@@ -1,89 +1,70 @@
 import React from 'react';
 import { Titulo } from '../components/Titulo';
 import styled from 'styled-components';
-import '../styles/Abouts.css';
-
+import Dolar from '../images/Dolar.jpg'
+import { Link } from 'react-router-dom';
 
 const Texto = styled.div`
-  background-color: #dce0e6
-  padding-bottom: 10px;
+  background-color: #C8CDB6;
 `;
 
 const Name = styled.h2`
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  margin: 0px 0px 0px 30px;
-  padding: 30px 0px 30px 0px;
-  background-color: #567ebb;
-  font-size: 40px;
-  @media(max-width:425px) {
-  font-size: 15px;
-  margin: 0px;
-  padding: 0xp;
-  }
-  @media(min-width:426px) and (max-width:768px) {
-  font-size: 20px;
-  margin: 0px;
-  padding: 15px 0px 0px 0px;
-  }
-  @media(min-width:769px) and (max-width:1024px) {
-  font-size: 25px;
-  margin: 0px;
-  padding: 20px 0px 20px 0px
-  }
-  @media(min-width: 1025px) and (max-width:1440px) {
-  font-size: 30px;
-  margin: 0px;
-  padding: 20px 0px 20px 0px;
-  }
+font-size: 22px;
+text-align: center;
+color: white;
+padding: 40px;
+background-color:#2b4c7e;
+font-weight: bold;
+
+@media(max-width:425px) {
+    font-size: 16px;
+    }
 `;
 
-const Contexto = styled.p`
-  display: flex;
-  text-align: left;
-  justify-content: center;
-  font-size: 20px;
-  line-height: 40px;
-  margin-top: 10px;
-  @media(max-width:425px) {
-  font-size: 10px;
-  margin: 0px 10px 0px 10px;
-  line-height: 20px;
+const Pages = styled(Link)`
+text-decoration: none;
+border-radius: 10px;
+border-color: #ffc220;
+font-size: 3vh;
+background-color: #ffc220;
+color: black;
+font-weight: bold;
+padding: 0px 20px 5px 20px;
+
+@media(max-width:320px) {
+    margin: 10px 0px 10px 5px;
+    allign-itens: center;
+    }
+   @media(min-width: 321px) and (max-width:375px) {
+    margin: 10px 0px 10px 5px;
+   }
+   @media(min-width: 376px) and (max-width:425px) {
+    margin: 10px 0px 10px 5px;
+   }
+   @media(min-width:426px) and (max-width:768px) {
+    margin: 10px 0px 10px 5px;
   }
-  @media(min-width:426px) and (max-width:768px) {
-  font-size: 15px;
-  margin: 15px;
-  line-height: 20px;
-  justify-content: left;
-  }
-  @media(min-width:769px) and (max-width:1024px) {
-  font-size: 17px;
-  margin: 10px;
-  line-height: 30px;
-  justify-content: left;
-  }
-  @media(min-width: 1025px) and (max-width: 1440px) {
-  font-size: 19px;
-  margin: 10px;
-  line-height: 35px;
-  justify-content: left;
-  }
+    @media(min-width:769px) and (max-width:1024px) {
+      margin: 10px 0px 10px 5px;
+    }
+    @media(min-width: 1025px) and (max-width: 1440px) {
+      margin: 10px 0px 10px 5px;
+    }
 `;
 
 
 export const Home = () => {
-return(
+    return (
 
-<>
-<Titulo>O que esperar?</Titulo>
-      <Texto>
-        <Name>Metodologia</Name>
-        <br />
-        <Contexto>Oi, ajustado</Contexto>
-      </Texto>
-</>
+        <>
+            <Titulo />
+            <Texto>
+                <img src={Dolar} width="90%" height="90%" />
+                <Name>Seja bem vindo ao simulador de aposentadoria, esperamos te ajudar alcançar sua independência financeira</Name>
+            </Texto>
+                <Pages to='/result'> Simular</Pages>
+        </>
 
-)
+    )
 
 }
