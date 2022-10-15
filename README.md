@@ -4,7 +4,7 @@ Calculadora de Aposentadoria
 
 ## Demo Link
 
-Access our site at http://localhost:3000/
+Access our site at https://main--rococo-cascaron-e6c750.netlify.app/
 
 ### About the Project
 
@@ -12,15 +12,12 @@ This project was made for calculating the time and money necessary to retire.
 
 ### Pages of the Site
 
-. About
+. Método
 . Home
-. Results
-. Charts
-. Print
+. Simulador
 
 ### Screenshots
 
-To be implemented.
 
 ### Tecnologies
 
