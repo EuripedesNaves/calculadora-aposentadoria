@@ -4,35 +4,24 @@
     padding: 0;
 }
 
-.simulator {
-    display: flex;
-    flex-direction: column;
-    margin-top: 390px;
-    min-width: 80%;
-    height: 24vh;
-    margin-bottom: 10px;
-    background-color: #567ebb;
-
-
-}
 
 @media (max-width: 768px) {
 
     .titulo {
         font-size: 15px;
         text-align: center;
-        margin: 10px;
-        padding: 10px;
+        /* margin: 5px 0px; */
+        padding: 20px;
+        background-color: #567ebb;
     }
 
     .form-box {
-        min-width: 100%;
-        height: 10vh;
-        border: 1px solid;
-        margin-bottom: 10px;
-        /* position:relative; */
-        background-color: #567ebb;
+        background-color: #dce0e6;
         font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        padding: 2vh 0vh 0vh 0vh;
+
     }
 
     .form-box form {
@@ -47,7 +36,7 @@
     .form-box input,
     textarea {
         display: block;
-        width: 91.5vw;
+        width: 50vw;
         padding: .8rem .8rem .5rem .8rem;
         margin: .9vw 0.9vw;
         border: 2px solid black;
@@ -60,22 +49,37 @@
         height: 15vh;
     }
 
+    .form-box h2 {
+        padding-bottom: 1vh;
+
+    }
+
+    .form-box span {
+        display: center;
+        flex-direction: column;
+        margin: .9vw 0.9vw;
+        width: 50vw;
+        background-color: #dce0e6;
+        padding: 5vh, 0vh
+    }
+
     .button {
         border-radius: 10px;
-        padding: 15px;
+        padding: 20px;
         margin: 50px;
         background-color: black;
-        color: white;
+        /* color: white; */
         font-size: 15px;
+        align-items: initial;
     }
 
     .footer {
         background-color: #dce0e6;
-        height: 189px
+        height: 15vh
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+/* @media (min-width: 769px) and (max-width: 1024px) {
 
     .titulo {
         font-size: 20px;
@@ -89,7 +93,7 @@
         height: 10vh;
         border: 1px solid;
         margin-bottom: 10px;
-        /* position:relative; */
+        position:relative;
         background-color: #567ebb;
         font-size: 15px;
     }
@@ -148,7 +152,7 @@
         height: 10vh;
         border: 1px solid;
         margin-bottom: 5px;
-        /* position:relative; */
+        /* position:relative;
         background-color: #567ebb;
         font-size: 12px;
     }
@@ -198,7 +202,7 @@
         margin-top: 390px;
         min-width: 80%;
         height: 20vh;
-        /* border: 1px solid; */
+        /* border: 1px solid;
         margin-bottom: 10px;
         background-color: #567ebb;
 
@@ -270,10 +274,10 @@
         margin-top: 600vh;
         min-width: 80%;
         height: 20vh;
-        /* border: 1px solid; */
+        /* border: 1px solid;
         margin-bottom: 10px;
         background-color: #567ebb;
-    }
+    } 
 
     
-}
+}*/
