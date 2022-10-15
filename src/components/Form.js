@@ -50,7 +50,7 @@ export const Form = () => {
                     />
                 </form>
                 <div className="footer">
-                    <button className="button" onClick={() => setCalculated(true)}>Realizar Cálculo</button>
+                    <button className="button" onClick={() => setCalculated(true)}>Calcular</button>
                 </div>
             </div>
             <div className="simulator">

@@ -10,7 +10,6 @@
     margin-top: 390px;
     min-width: 80%;
     height: 24vh;
-    /* border: 1px solid; */
     margin-bottom: 10px;
     background-color: #567ebb;
 
@@ -268,7 +267,7 @@
     .simulator {
         display: flex;
         flex-direction: column;
-        margin-top: 600px;
+        margin-top: 600vh;
         min-width: 80%;
         height: 20vh;
         /* border: 1px solid; */

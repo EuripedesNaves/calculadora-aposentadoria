@@ -10,36 +10,36 @@ p {
     font-weight: bold;
 } */
 
- @media (max-width: 1440px) {
+@media (max-width: 1440px) {
 
     h1 {
         font-size: 35px;
         padding: 5px 2px;
-        color: white ;
+        color: white;
     }
-    
+
     p {
         font-size: 17px;
         padding: 10px;
         font-weight: bold;
     }
 
-    
-} 
+
+}
 
 @media (min-width: 1441px) and (max-width: 2560px) {
 
     h1 {
         font-size: 70px;
         padding: 5px 2px;
-        color: white ;
+        color: white;
     }
-    
+
     p {
         font-size: 35px;
         padding: 10px;
         font-weight: bold;
     }
 
-    
-} 
+
+}
