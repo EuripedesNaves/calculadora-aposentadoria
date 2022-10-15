@@ -60,9 +60,8 @@ export const Form = () => {
 
                 </span>
             </div>
-            <div className="footer">
-                <button className="button" onClick={() => setCalculated(true)}>Calcular</button>
-            </div>
+            <button className="button" onClick={() => setCalculated(true)}>Bora vê</button>
+            <div className="footer"></div>
         </>
 
     )

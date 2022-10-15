@@ -43,8 +43,8 @@ export const NavBar = () => {
   return (
     <Nav>
       <Pages to='/'> Home</Pages>
-      <Pages to='/about'> About</Pages>
       <Pages to='/result'> Result</Pages>
+      <Pages to='/about'> About</Pages>
     </Nav>
   )
 }
